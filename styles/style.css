@@ -16,6 +16,12 @@
     justify-content: center;
 }
 
+.characters__like {
+    padding: .5em 1em;
+    border-radius: 10%;
+    margin-top: .5em;
+}
+
 
 #app h2 {
     padding: 2rem;
