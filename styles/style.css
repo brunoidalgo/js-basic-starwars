@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Handlee&display=swap');
 
 :root {
@@ -11,7 +10,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: var(--font-handlee);
 }
 
 
@@ -24,20 +22,29 @@ body {
    color: #CCC;
 }
 
-
-.buscarCharacter {
-    margin-top: 1em;
-    padding: .4em;
-    border-radius: 1em;
-}
-
-.buttonCharacters {
-    border-radius: .5em;
-    padding: .4em;
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: left;
+    padding: 4em;
 }
 
 #app {
     text-align: center;
+}
+
+.buscarCharacter {
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    font-family: var(--font-acme);
+}
+
+.buttonCharacters {
+    border-radius: .5em;
+    padding: .8em;
+    font-family: var(--font-acme);
 }
 
 .characters {
@@ -52,6 +59,11 @@ div span {
     margin-top: .5em;
 }
 
+.item p {
+    font-weight: 600;
+    font-family: var(--font-montserrat);
+}
+
 .like {
     color: #FD4;
     cursor: pointer;
@@ -63,10 +75,9 @@ div span {
 }
 
 
-#app h2 {
-    padding: 2rem;
+#app h1 {
     color: #f6f6f6;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--font-montserrat);
 }
 
 #app img {
@@ -81,10 +92,15 @@ footer {
     font-size: 1rem;
 }
 
+input {
+    font-family: var(--font-handlee);
+}
+
 
 button {
    background-color: #FD4;
    color: #111;
    font-size: 1rem;
    /* border: none; */
+   font-family: var(--font-handlee);
 }
