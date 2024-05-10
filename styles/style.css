@@ -38,16 +38,25 @@ body {
     justify-content: center;
 }
 
-.characters__like {
+div span {
     padding: .5em 1em;
     border-radius: 2em;
     margin-top: .5em;
 }
 
+.like {
+    color: #FD4;
+    cursor: pointer;
+}
+
+.delete {
+    cursor: pointer;
+    color: #F65;
+}
+
 
 #app h2 {
     padding: 2rem;
-    background-color: #000000;
     color: #f6f6f6;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -62,7 +71,6 @@ footer {
     text-align: center;
     padding: 1rem;
     font-size: 1rem;
-    position: fixed;
 }
 
 
