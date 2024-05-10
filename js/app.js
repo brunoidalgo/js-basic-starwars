@@ -47,11 +47,41 @@ const App = new Vue({
     data: {
         title: 'Star Wars Lego',
         userName: 'Bruno Empke',
-        characters: LIST
+        characters: LIST,
+        searchName:''
     },
     methods: {
         like(name) {
             alert(`O Personagem ${name} recebeu um like!`)
+        },
+
+        remove(id) {
+            const list = this.characters;
+
+           const result = list.filter(item => {
+                return item.id !== id;
+            })
+
+            this.characters = result;
+        },
+        search() {
+
+
+            if (this.searchName == '') {
+              return alert('Campo de busca é obrigatório.')  
+            }
+
+            const list = this.characters = LIST
+
+            const result = list.filter(item => {
+                return item.nome === this.searchName
+            })
+
+                if (result.lenght <= 0) {
+                    alert("Nenhum registro encontrado");
+                } else {
+                    this.characters = result
+                }
         }
     }
 })

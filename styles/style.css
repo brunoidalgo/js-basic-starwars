@@ -6,6 +6,28 @@
     font-family: "Montserrat", sans-serif;
 }
 
+
+body {
+    background-image: url(../images/bg-space.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-color: #111;
+   color: #CCC;
+}
+
+
+.buscarCharacter {
+    margin-top: 1em;
+    padding: .4em;
+    border-radius: 1em;
+}
+
+.buttonCharacters {
+    border-radius: .5em;
+    padding: .4em;
+}
+
 #app {
     text-align: center;
 }
@@ -18,7 +40,7 @@
 
 .characters__like {
     padding: .5em 1em;
-    border-radius: 10%;
+    border-radius: 2em;
     margin-top: .5em;
 }
 
@@ -32,6 +54,8 @@
 
 #app img {
     width: 60%;
+    border-radius: 20%;
+    border: 5px #111 solid;
 }
 
 footer {
@@ -39,4 +63,12 @@ footer {
     padding: 1rem;
     font-size: 1rem;
     position: fixed;
+}
+
+
+button {
+   background-color: #FD4;
+   color: #111;
+   font-size: 1rem;
+   /* border: none; */
 }
